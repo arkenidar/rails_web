@@ -34,3 +34,5 @@
 /config/*.key
 
 config/credentials.yml.enc
+
+Gemfile.lock
