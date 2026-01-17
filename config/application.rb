@@ -23,5 +23,8 @@ module RailsWeb
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Support running under /rails subpath (reverse proxy)
+    config.relative_url_root = ENV.fetch("RAILS_RELATIVE_URL_ROOT", "/")
   end
 end
